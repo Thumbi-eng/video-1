@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crowntech Developer Profile Card">
+  <title>Crowntech Developer Profile</title>
+</head>
+<body>
+
+  <!-- Main Landmark -->
+  <main class="page-wrapper">
+
+    <!-- Card Root Component -->
+    <article class="profile-card" aria-labelledby="dev-name">
+      
+      <!-- Card Header -->
+      <header class="card-header">
+        <div class="avatar-badge" aria-hidden="true">CT</div>
+        <h1 id="dev-name">Alex Rivera</h1>
+        <p class="job-title">Full-Stack Engineer</p>
+      </header>
+
+      <!-- Bio Section -->
+      <section class="card-section" aria-label="Developer Biography">
+        <p>Building scalable backend APIs and high-performance frontend interfaces.</p>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section class="card-section" aria-label="Technology Stack">
+        <h2>Tech Stack</h2>
+        <ul class="tech-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React</li>
+        </ul>
+      </section>
+
+      <!-- Action & State Section -->
+      <section class="card-section" aria-label="Interactions">
+        <button id="connect-btn" type="button" aria-live="polite">
+          Connect <span id="connect-count">(0)</span>
+        </button>
+      </section>
+
+      <!-- Contact Form -->
+      <form class="contact-form" aria-label="Quick Contact Form">
+        <h2>Quick Contact</h2>
+        
+        <div class="form-group">
+          <label for="user-email">Email Address</label>
+          <input 
+            type="email" 
+            id="user-email" 
+            name="email" 
+            required 
+            placeholder="alex@crowntech.dev"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="user-msg">Message</label>
+          <textarea 
+            id="user-msg" 
+            name="message" 
+            required 
+            rows="3" 
+            placeholder="Let's build something..."
+          ></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Card Footer -->
+      <footer class="card-footer">
+        <p><small>&copy; 2026 Crowntech Studio. Built for production.</small></p>
+      </footer>
+
+    </article>
+
+  </main>
+
+</body>
+</html>
